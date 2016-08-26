@@ -1,0 +1,8 @@
+p {
+    font-style: italic;
+    font-family: "Arial";
+    font-size: 1em;
+    display: inline;
+    margin-left: 20px;
+    float: none;
+}
