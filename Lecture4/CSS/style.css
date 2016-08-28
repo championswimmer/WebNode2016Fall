@@ -1,0 +1,70 @@
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+
+.smallbox {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: 100;
+    transition: ease-out;
+}
+
+#container {
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+}
+
+#divone {
+    animation-name: divbounce;
+    animation-duration: 4s;
+    animation-iteration-count: 500;
+    position: relative;
+}
+@keyframes square {
+    0% {
+       top: 0; left: 0;
+    }
+    25% {
+        top: 350px; left: 0;
+        background-color: red;
+        transform: rotate(90deg);
+        transition: ease-out;
+    }
+    50% {
+        top: 350px; left: 350px;
+        background-color: green;
+        transform: rotate(180deg);
+        transition: ease-out;
+    }
+    75% {
+        top: 0; left: 350px;
+        background-color: yellow;
+        transform: rotate(90deg);
+        transition: ease-out;
+    }
+    100% {
+        top: 0; left: 0;
+        transition: ease-out;
+
+    }
+}
+@keyframes divbounce {
+    0% {top: 0px}
+    50% {
+        transform: rotate(20deg);
+        top: 100px;
+        background-color: blue
+    }
+    100% {top: 0px}
+}
